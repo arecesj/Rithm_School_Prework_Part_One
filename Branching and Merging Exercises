@@ -1,0 +1,29 @@
+# Branching and Merging Exercises #
+
+Part 1.
+  1. Removes files that haven't been pushed to staging
+  2. Removes directories that aren't currently tracked
+  3. git checkout -b NAME_OF_BRANCH
+  4. Recursive happens when more than one commits are happening on a branch is being worked on. Fast forward is if only one person is working on. The former is for when teams are using the same branch.
+  5. git checkout NAME_OF_DIFF_BRANCH
+  6. git checkout 
+  7. git branch -D NAME_OF_BRANCH
+  8. Shows the difference between two commits
+  9. git reset HEAD NAME_OF_TXT_OR_FILE
+  10. When work on the same file is being done and Git doesn't know which file to choose.
+
+  Part 2.
+  mkdir merge_conflict_example && cd merge_conflict_example
+  git init
+  echo sample > sample.txt
+  git add .
+  git commit -m "sample commit"
+  git checkout -b conflict_branch
+  echo secondSample > second.txt
+  git add .
+  git commit -m "first piece of conflict"
+  git checkout master
+  echo thirdSample > second.txt
+  git add .
+  git commit -m "here is the merge conflict"
+  git merge conflict_branch 

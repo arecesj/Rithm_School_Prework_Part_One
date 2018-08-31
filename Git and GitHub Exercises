@@ -1,0 +1,99 @@
+# Git & GitHub Exercises #
+
+Part 1.
+  mkdir local_repo & cd local_repo
+  git init
+  echo first > first.txt
+  echo second > second.txt
+  echo third > third.txt
+  git add .
+  git commit -m "commit exercise"
+  Created git_github_exercise on GitHub
+  echo "# git_github_exercise" >> README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin git@github.com:arecesj/git_github_exercise.git
+  git push -u origin master
+  git clone git@github.com:arecesj/git_practice.git
+  cd git_practice
+  echo first > first.txt
+  echo second > second.txt
+  git add .
+  git commit -m "hope this works"
+  git push
+
+Part 2 clmystery
+  git clone git@github.com:arecesj/clmystery.git
+  cd clmystery
+  cat instructions
+  cd mystery
+  ls -a
+  cat crimescene 
+  grep "CLUE" < crimescene > clues.txt
+  cat AAA Delta_SkyMiles Terminal_City_Library Museum_of_Bash_History > four_memberships.txt
+  sort four_memberships.txt | uniq -ic
+  cd ..
+  echo "Aldo Nicolas
+Andrei Masna
+Augustin Lozano
+Brian Boyer
+Dalibor Vidal
+Deron Estanguet
+Didier Munoz
+Emma Wei
+Jacqui Maher
+Jamila Rodhe
+Jeremy Bowers
+Kelly Kulish
+Krystian Pen
+Liangliang Miller
+Marina Murphy
+Mary Tomashova
+Matt Waite
+Mike Bostock
+Monika Hwang
+Nikolaus Milatz
+Sonata Raif
+Stephanie Adlington
+Tamara Cafaro" > suspects.txt
+grep "Aldo Nicolas" people
+grep -A1 "Aldo Nicolas" vehicles
+(did the same for every suspect)
+echo "Augustin Lozano
+Brian Boyer
+Jeremy Bowers
+Matt Waite
+Mike Bostock
+Nikolaus Milatz" > suspects.txt
+cd interviews
+grep "Augustin" * (no results, still a suspect)
+grep "Bowers" * (also no results, still a suspect)
+grep "Boyer" * (not a suspect if he owns a second car. Only owns one. Still a suspect)
+cd ..
+grep "Boyer" vehicles (only owns one car)
+cd interviews
+grep "Waite" * (if he owns a second car, he's a suspect. Doesn't.)
+cd ..
+grep "Waite" vehicles (only owns one car, not a suspect)
+cd interviews
+grep "Bostock" *
+Can prove he was out of town that morning of. Not a suspect
+grep "Milatz" * (no result, still a suspect)
+
+echo "Augustin Lozano 
+Jeremy Bowers
+Nikolaus Milatz" > suspects.txt
+
+Searching their addresses
+cd streets
+cat Dunstable_Road
+Bowers was out of town
+Couldn't find Lozano's or Milatz's addresses
+However...
+cat Buckingham_Place (Annabel Church's street) refers to interview-699607
+Shooter has a blue Honda with a license plate that starts with "L337" and ends with 9
+cd ..
+grep -A4 'L337' vehicles
+Jeremy Bowers owns a Blue Honda.
+Jeremy did it!

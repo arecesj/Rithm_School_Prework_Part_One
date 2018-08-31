@@ -1,0 +1,30 @@
+# Intermediate Terminal Exercises #
+
+Part 1.
+  1. export FIRST_NAME=Juan
+  2. echo $FIRST_NAME
+  3. echo $PATH
+  4. PATH is a set of paths for the environment to find programs to execute
+  5. To make sure you can find info, make it easy to type out other commands with it, and for security
+  6. Save them to Bash or ZSH (.zshrc or .bash_profile)
+  7. A program that is being executed/running
+  8. ps -aux (answer says ps -ax so not sure)
+  9. Used to identify the process you want to stop
+  10. kill (or kill -9)
+  11. -9 represents the KILL signal, which is a "non-catchable, non-ignorable kill." If killing a process doesn't work, try killing with -9 and see if that gets the job done.
+  12. -i
+  13. -B
+  14. -C
+  15. -A
+  16. -w
+  17. -n
+
+Part 2.
+  1. find ~/Desktop -name "learn"
+  2. find ~/Desktop -name "P.*"
+  3. find ~/Deskop -name "*.txt"
+  4. find ~/Desktop/views -name "*data*"
+  5. grep -c "Elie" instructors.txt
+  6. grep -w "P.*" instructors.txt
+  7. grep -ni "z.*" instructors.txt
+

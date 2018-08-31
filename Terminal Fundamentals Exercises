@@ -1,0 +1,54 @@
+# Terminal Fundamentals #
+
+A. Navigating in Terminal Exercises
+  1.
+    a.The difference between '/' and '~' is that the former is the highest directory for the entire system whereas '~' refers to the highest directory of the user that is currently  logged in.
+    b.'/' refers to a root directory. In other words, the first or top-most directory of the system.
+    c. '~' refers to a home directory. In other words, the directory containing files for a given user of that system. 
+  2. We use cd (aka change directory) when changing directories.
+  3. The difference between absolute and relative paths are that an absolute path points to the same lcoation in a file system (regardless of the current directory) whereas relative path starts from a given working directory.
+
+B. Working with Files and Folders Exercises
+  1. touch name.txt
+  2. mv name.txt rename.txt
+  3. cp rename.txt copy.txt
+  4. rm copy.txt
+  5. mkdir questions
+  6. cd questions
+  7. touch first.txt
+  8. touch second.txt
+  9. cd ..
+     cp -r questions questions_copy
+  10.-r is a flag. It's a command as an option that can be passed to that command.
+  11.rm -rf questions
+     rm -rf questions_copy 
+
+C. Listing Files and Flags Exercises
+  No Exercises
+
+D. Terminal Basics Exercises
+  Part 1.
+    1. mkdir first
+    2. cd first
+    3. touch person.txt
+    4. mv person.txt another.txt
+    5. cp another.txt copy.txt
+    6. rm copy.txt
+    7. cd ..
+      cp -r first second
+    8. rm -rf second
+  
+  Part 2.
+    1. man stands for manual and is an informational resource to better understand what each command does. To get out of man rm hit 'q'.
+    2. man ls. -l lists in long former. -a includes directory entries whose names begin with a dot.
+    3. curl https://www.google.com > google.html
+    4. less google.html
+    5. man less.
+    6. OPTION + Left Arrow or OPTION + Right Arrow
+    7. CTRL + A
+    8. CTRL + E
+    9. CTRL + W 
+    10. Terminal is an app that gives us a Command Line Interface (CLI) whereas the shell is the actual program that lives within Terminal.
+    11./12. The difference between absolute and relative paths are that an absolute path points to the same lcoation in a file system (regardless of the current directory) whereas relative path starts from a given working directory.
+    13.It's a command as an option that can be passed to that command. -r, -l, -a are all flags I've used so far.
+    14. They help remove a folder even if there are contents within it.
